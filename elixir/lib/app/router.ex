@@ -6,7 +6,7 @@ defmodule App.Router do
   plug :dispatch
 
   get "/" do
-    send_resp(conn, 200, "hello world")
+    send_resp(conn, 200, "Hello World!")
   end
 
   match _ do

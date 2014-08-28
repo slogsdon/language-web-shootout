@@ -17,7 +17,7 @@ impl Server for HelloWorldServer {
 
     fn handle_request(&self, _r: Request, w: &mut ResponseWriter) {
         w.headers.date = Some(time::now_utc());
-        w.headers.content_length = Some(14);
+        w.headers.content_length = Some(12);
         w.headers.content_type = Some(MediaType {
             type_: String::from_str("text"),
             subtype: String::from_str("html"),
@@ -25,7 +25,7 @@ impl Server for HelloWorldServer {
         });
         w.headers.server = Some(String::from_str("Example"));
 
-        w.write(b"Hello, World!\n").unwrap();
+        w.write(b"Hello World!").unwrap();
     }
 }
 
