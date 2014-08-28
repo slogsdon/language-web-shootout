@@ -1,0 +1,9 @@
+[package]
+
+name = "app"
+version = "0.0.1"
+authors = ["Shane Logsdon <shane@shanelogsdon.com>"]
+
+[dependencies.http]
+
+git = "https://github.com/chris-morgan/rust-http.git"
