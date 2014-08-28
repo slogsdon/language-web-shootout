@@ -1,6 +1,6 @@
 #lang racket
 
-(require "main.rkt")
+(require "spin/main.rkt")
 
 (get "/" (lambda () 
   "Hello World!"))
