@@ -21,14 +21,15 @@ Currently, there is only one endpoint being tested in each language, a simple
     - JRE 1.8.0_20-b26
     - Clojure 1.6.0
     - Jetty (7.6.8)
-    - Compojure (1.1.8)
+    - http-kit (2.1.16)
+    - Compojure (1.1.9)
 - Racket
     - Racket 6.0
     - Spin (1.3)
 - Haskell
-    - GHC 7.6.3
-    - WAI (3.0.1.1)
-    - Scotty (0.8.2)
+    - GHC 7.8.3
+    - WAI (3.0.2.3)
+    - Scotty (0.9.0)
 - Rust
     - Rust 0.12.0-nightly (136ab3c6b 2014-10-04 00:17:04 +0000)
     - rust-http (master)
@@ -63,71 +64,85 @@ Currently, there is only one endpoint being tested in each language, a simple
 ### Go
 
 ```
-$ wrk -c32 -t32 -d60 http://localhost:3000
-Running 1m test @ http://localhost:3000
+$ wrk -c32 -t32 -d60 http://localhost:3000/
+Running 1m test @ http://localhost:3000/
   32 threads and 32 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     1.18ms  766.77us  30.34ms   70.83%
-    Req/Sec     0.91k   144.40     2.09k    76.23%
-  1653346 requests in 1.00m, 203.40MB read
-Requests/sec:  27557.39
-Transfer/sec:      3.39MB
+    Latency     1.12ms  622.61us   4.51ms   60.41%
+    Req/Sec     0.95k   146.14     1.33k    58.11%
+  1723181 requests in 1.00m, 211.99MB read
+Requests/sec:  28722.11
+Transfer/sec:      3.53MB
 ```
 
 ### Haskell
 
 ```
-$ wrk -c32 -t32 -d60 http://localhost:3000
-Running 1m test @ http://localhost:3000
+$ wrk -c32 -t32 -d60 http://localhost:3000/
+Running 1m test @ http://localhost:3000/
   32 threads and 32 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     1.33ms  146.45us  18.15ms   75.60%
-    Req/Sec   791.06     88.86     1.11k    45.85%
-  1424316 requests in 1.00m, 210.54MB read
-Requests/sec:  23740.33
-Transfer/sec:      3.51MB
+    Latency     1.13ms  119.06us   4.43ms   76.08%
+    Req/Sec     0.93k    93.98     1.22k    72.21%
+  1673806 requests in 1.00m, 271.37MB read
+Requests/sec:  27898.61
+Transfer/sec:      4.52MB
 ```
 
-### Clojure
+### Clojure (Jetty)
 
 ```
-$ wrk -c32 -t32 -d60 http://localhost:3000
-Running 1m test @ http://localhost:3000
+$ wrk -c32 -t32 -d60 http://localhost:3000/
+Running 1m test @ http://localhost:3000/
   32 threads and 32 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    26.20ms   65.33ms 355.01ms   92.52%
-    Req/Sec   121.87     64.48   435.00     66.83%
-  232496 requests in 1.00m, 35.03MB read
-Requests/sec:   3874.92
-Transfer/sec:    597.89KB
+    Latency    81.97ms  155.28ms 517.01ms   82.76%
+    Req/Sec   120.15     87.09   833.00     62.64%
+  227778 requests in 1.00m, 34.54MB read
+Requests/sec:   3796.31
+Transfer/sec:    589.47KB
+```
+
+### Clojure (http-kit)
+
+```
+$ wrk -c32 -t32 -d60 http://localhost:3000/
+Running 1m test @ http://localhost:3000/
+  32 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.71ms   10.36ms 311.30ms   99.59%
+    Req/Sec     0.90k   234.79     1.81k    73.35%
+  1666670 requests in 1.00m, 233.65MB read
+Requests/sec:  27779.93
+Transfer/sec:      3.89MB
 ```
 
 ### Elixir
 
 ```
-$ wrk -c32 -t32 -d60 http://localhost:3000
-Running 1m test @ http://localhost:3000
+$ wrk -c32 -t32 -d60 http://localhost:3000/
+Running 1m test @ http://localhost:3000/
   32 threads and 32 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     3.38ms   13.07ms 128.71ms   98.70%
-    Req/Sec   560.90    167.82     2.70k    77.53%
-  1020955 requests in 1.00m, 174.24MB read
-Requests/sec:  17016.77
-Transfer/sec:      2.90MB
+    Latency     3.62ms   18.78ms 197.12ms   98.91%
+    Req/Sec   611.73    156.84     1.90k    66.78%
+  1113773 requests in 1.00m, 191.14MB read
+Requests/sec:  18564.53
+Transfer/sec:      3.19MB
 ```
 
 ### Erlang
 
 ```
-$ wrk -c32 -t32 -d60 http://localhost:3000
-Running 1m test @ http://localhost:3000
+$ wrk -c32 -t32 -d60 http://localhost:3000/
+Running 1m test @ http://localhost:3000/
   32 threads and 32 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     4.49ms   19.90ms 156.80ms   98.09%
-    Req/Sec   643.32    259.12     4.00k    80.22%
-  1169141 requests in 1.00m, 170.54MB read
-Requests/sec:  19486.93
-Transfer/sec:      2.84MB
+    Latency     6.24ms   37.89ms 319.13ms   98.54%
+    Req/Sec   719.43    256.70     3.44k    72.15%
+  1309720 requests in 1.00m, 191.04MB read
+Requests/sec:  21830.29
+Transfer/sec:      3.18MB
 ```
 
 ### Racket
