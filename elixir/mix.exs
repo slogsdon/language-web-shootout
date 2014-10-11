@@ -4,7 +4,7 @@ defmodule App.Mixfile do
   def project do
     [app: :app,
      version: "0.0.1",
-     elixir: "~> 0.15.2-dev",
+     elixir: "~> 1.0.0",
      deps: deps]
   end
 
@@ -15,6 +15,6 @@ defmodule App.Mixfile do
 
   defp deps do
     [ {:cowboy, "~> 1.0.0"},
-      {:plug, "~> 0.6.0"} ]
+      {:plug, "~> 0.8.1"} ]
   end
 end
