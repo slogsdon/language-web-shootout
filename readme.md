@@ -11,14 +11,14 @@ Currently, there is only one endpoint being tested in each language, a simple
 ## Languages
 
 - Elixir
-    - Elixir 0.15.2-dev
-    - Erlang 17
+    - Elixir 1.0.0
+    - Erlang 17.3
     - Cowboy (1.0.0) via Plug (0.6.0)
 - Erlang
-    - Erlang 17
+    - Erlang 17.3
     - Cowboy (1.0.0)
 - Clojure
-    - JRE 1.6.0_65
+    - JRE 1.8.0_20-b26
     - Clojure 1.6.0
     - Jetty (7.6.8)
     - Compojure (1.1.8)
@@ -30,10 +30,14 @@ Currently, there is only one endpoint being tested in each language, a simple
     - WAI (3.0.1.1)
     - Scotty (0.8.2)
 - Rust
+    - Rust 0.12.0-nightly (136ab3c6b 2014-10-04 00:17:04 +0000)
+    - rust-http (master)
 - Go
     - Go 1.3.1
 - PHP
-    - PHP 5.6.0RC2
+    - PHP 5.6.1
+- Ruby
+    - Ruby 2.0.0p481 (2014-05-08 revision 45883) [universal.x86_64-darwin13]
 
 ## Criteria
 
@@ -139,4 +143,47 @@ Running 1m test @ http://localhost:3000
   Socket errors: connect 0, read 2, write 0, timeout 0
 Requests/sec:   1653.67
 Transfer/sec:    306.83KB
+```
+
+### Rust
+
+```
+$ wrk -c32 -t32 -d60 http://localhost:3000/
+Running 1m test @ http://localhost:3000/
+  32 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     6.34ms  441.09us  17.97ms   85.47%
+    Req/Sec   164.81     30.21   272.00     87.41%
+  302958 requests in 1.00m, 41.60MB read
+Requests/sec:   5049.56
+Transfer/sec:    710.10KB
+```
+
+### PHP
+
+```
+$ wrk -c32 -t32 -d60 http://localhost:3000
+Running 1m test @ http://localhost:3000/
+  32 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   151.30ms  290.00ms 709.42ms   78.74%
+    Req/Sec    16.05    237.56     4.89k    99.52%
+  32344 requests in 1.00m, 4.90MB read
+  Socket errors: connect 0, read 32343, write 0, timeout 850
+Requests/sec:    538.88
+Transfer/sec:     83.67KB
+```
+
+### Ruby
+
+```
+$ wrk -c32 -t32 -d60 http://localhost:3000/
+Running 1m test @ http://localhost:3000/
+  32 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    51.13ms   16.88ms 153.43ms   70.38%
+    Req/Sec    19.81      5.10    40.00     69.07%
+  38798 requests in 1.00m, 5.96MB read
+Requests/sec:    646.51
+Transfer/sec:    101.65KB
 ```
