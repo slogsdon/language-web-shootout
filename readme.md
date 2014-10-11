@@ -39,6 +39,9 @@ Currently, there is only one endpoint being tested in each language, a simple
     - PHP 5.6.1
 - Ruby
     - Ruby 2.0.0p481 (2014-05-08 revision 45883) [universal.x86_64-darwin13]
+- Common Lisp
+    - SBCL 1.2.2
+    - Hutchentoot (1.2.27)
 
 ## Criteria
 
@@ -200,4 +203,18 @@ Running 1m test @ http://localhost:3000/
   38798 requests in 1.00m, 5.96MB read
 Requests/sec:    646.51
 Transfer/sec:    101.65KB
+```
+
+### Common Lisp
+
+```
+$ wrk -c32 -t32 -d60 http://localhost:3000/
+Running 1m test @ http://localhost:3000/
+  32 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    57.29ms  144.19ms 625.17ms   87.04%
+    Req/Sec   380.97    308.13     3.89k    79.91%
+  696270 requests in 1.00m, 104.25MB read
+Requests/sec:  11605.32
+Transfer/sec:      1.74MB
 ```
