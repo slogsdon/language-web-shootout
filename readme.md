@@ -148,16 +148,15 @@ Transfer/sec:      3.18MB
 ### Racket
 
 ```
-$ wrk -c32 -t32 -d60 http://localhost:3000
-Running 1m test @ http://localhost:3000
+$ wrk -c32 -t32 -d60 http://localhost:3000/
+Running 1m test @ http://localhost:3000/
   32 threads and 32 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    24.17ms   32.40ms 278.23ms   97.78%
-    Req/Sec    51.61     19.55   194.00     73.02%
-  99235 requests in 1.00m, 17.98MB read
-  Socket errors: connect 0, read 2, write 0, timeout 0
-Requests/sec:   1653.67
-Transfer/sec:    306.83KB
+    Latency    22.63ms   27.53ms 181.96ms   94.83%
+    Req/Sec    57.67     19.17   127.00     71.28%
+  110634 requests in 1.00m, 22.26MB read
+Requests/sec:   1843.45
+Transfer/sec:    379.85KB
 ```
 
 ### Rust
