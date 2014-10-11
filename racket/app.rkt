@@ -1,8 +1,11 @@
 #lang racket
+(require web-server/servlet 
+         web-server/servlet-env)
 
-(require "spin/main.rkt")
+(define (start req) (response/xexpr "Hello, World!"))
 
-(get "/" (lambda () 
-  "Hello World!"))
-
-(run #:port 3000)
+(serve/servlet start 
+  #:port 3000 
+  #:servlet-path "/"
+  #:stateless? #t
+  #:command-line? #t)

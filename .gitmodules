@@ -1,3 +1,0 @@
-[submodule "racket/spin"]
-	path = racket/spin
-	url = https://github.com/dmac/spin.git
