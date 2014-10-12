@@ -136,6 +136,8 @@ Currently, there is only one endpoint being tested in each language, a simple
 
 #### Clojure in Development
 
+[Jetty project code](https://github.com/slogsdon/language-web-shootout/tree/master/clojure/jetty). [http-lit project code](https://github.com/slogsdon/language-web-shootout/tree/master/clojure/http-kit).
+
 #### Clojure Environment
 
 #### Clojure when Building
@@ -187,6 +189,8 @@ Transfer/sec:    589.47KB
 
 #### Common Lisp in Development
 
+[Project code](https://github.com/slogsdon/language-web-shootout/tree/master/common-lisp)
+
 #### Common Lisp Environment
 
 #### Common Lisp when Building
@@ -221,6 +225,8 @@ Transfer/sec:      1.74MB
 - Vibe.d (0.7.21-rc.2)
 
 #### D in Development
+
+[Project code](https://github.com/slogsdon/language-web-shootout/tree/master/d)
 
 #### D Environment
 
@@ -261,6 +267,8 @@ Transfer/sec:      1.94MB
 
 #### Elixir in Development
 
+[Project code](https://github.com/slogsdon/language-web-shootout/tree/master/elixir)
+
 #### Elixir Environment
 
 #### Elixir when Building
@@ -298,6 +306,8 @@ Transfer/sec:      3.19MB
 
 #### Erlang in Development
 
+[Project code](https://github.com/slogsdon/language-web-shootout/tree/master/erlang)
+
 #### Erlang Environment
 
 #### Erlang when Building
@@ -330,6 +340,8 @@ Transfer/sec:      3.18MB
 - Go 1.3.1
 
 #### Go in Development
+
+[Project code](https://github.com/slogsdon/language-web-shootout/tree/master/go)
 
 #### Go Environment
 
@@ -371,6 +383,8 @@ Transfer/sec:      3.53MB
 
 #### Haskell in Development
 
+[Project code](https://github.com/slogsdon/language-web-shootout/tree/master/haskell)
+
 #### Haskell Environment
 
 #### Haskell when Building
@@ -403,6 +417,8 @@ Transfer/sec:      4.52MB
 - PHP 5.6.1
 
 #### PHP in Development
+
+[Project code](https://github.com/slogsdon/language-web-shootout/tree/master/php)
 
 #### PHP Environment
 
@@ -441,6 +457,8 @@ Transfer/sec:     83.67KB
 
 #### Racket in Development
 
+[Project code](https://github.com/slogsdon/language-web-shootout/tree/master/racket)
+
 #### Racket Environment
 
 #### Racket when Building
@@ -474,6 +492,8 @@ Transfer/sec:    379.85KB
 - Ruby 2.0.0p481 (2014-05-08 revision 45883) [universal.x86_64-darwin13]
 
 #### Ruby in Development
+
+[Project code](https://github.com/slogsdon/language-web-shootout/tree/master/ruby)
 
 #### Ruby Environment
 
@@ -510,6 +530,8 @@ Transfer/sec:    101.65KB
 - rust-http (master)
 
 #### Rust in Development
+
+[Project code](https://github.com/slogsdon/language-web-shootout/tree/master/rust)
 
 #### Rust Environment
 
