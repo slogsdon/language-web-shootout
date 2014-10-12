@@ -42,6 +42,9 @@ Currently, there is only one endpoint being tested in each language, a simple
 - Common Lisp
     - SBCL 1.2.2
     - Hutchentoot (1.2.27)
+- D
+    - dmd v2.065
+    - Vibe.d (0.7.21-rc.2)
 
 ## Criteria
 
@@ -134,6 +137,20 @@ Running 1m test @ http://localhost:3000/
   1113773 requests in 1.00m, 191.14MB read
 Requests/sec:  18564.53
 Transfer/sec:      3.19MB
+```
+
+### D
+
+```
+$ wrk -c32 -t32 -d60 http://localhost:3000/
+Running 1m test @ http://localhost:3000/
+  32 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.57ms  642.44us  14.23ms   76.24%
+    Req/Sec   414.02     71.23   666.00     62.58%
+  754021 requests in 1.00m, 116.49MB read
+Requests/sec:  12568.04
+Transfer/sec:      1.94MB
 ```
 
 ### Common Lisp

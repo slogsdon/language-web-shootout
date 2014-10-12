@@ -1,0 +1,9 @@
+{
+	"name": "app",
+	"description": "A minimal D application.",
+	"copyright": "Copyright © 2014, shane",
+	"authors": ["shane"],
+	"dependencies": {
+    "vibe-d": "0.7.21-rc.2"
+	}
+}
