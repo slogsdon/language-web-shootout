@@ -117,6 +117,15 @@ Currently, there is only one endpoint being tested in each language, a simple
 
 ### Clojure
 
+> Clojure is a dynamic programming language that targets the Java Virtual Machine 
+> (and the CLR, and JavaScript). It is designed to be a general-purpose language, 
+> combining the approachability and interactive development of a scripting language 
+> with an efficient and robust infrastructure for multithreaded programming. Clojure 
+> is a compiled language - it compiles directly to JVM bytecode, yet remains 
+> completely dynamic. Every feature supported by Clojure is supported at runtime. 
+> Clojure provides easy access to the Java frameworks, with optional type hints and 
+> type inference, to ensure that calls to Java can avoid reflection.
+
 ##### Versions
 
 - JRE 1.8.0_20-b26
@@ -167,6 +176,10 @@ Transfer/sec:    589.47KB
 
 ### Common Lisp ([SBCL](http://www.sbcl.org/))
 
+> Common Lisp is the modern, multi-paradigm, high-performance, compiled, 
+> ANSI-standardized, most prominent (along with Scheme) descendant of the 
+> long-running family of Lisp programming languages.
+
 ##### Versions
 
 - SBCL 1.2.2
@@ -198,6 +211,10 @@ Transfer/sec:      1.74MB
 
 ### D
 
+> D is a language with C-like syntax and static typing. It 
+> pragmatically combines efficiency, control, and modeling power, 
+> with safety and programmer productivity.
+
 ##### Versions
 
 - dmd v2.065
@@ -228,6 +245,13 @@ Transfer/sec:      1.94MB
 #### Perception of D
 
 ### Elixir
+
+> Elixir is a dynamic, functional language designed for building 
+> scalable and maintainable applications.
+> 
+> Elixir leverages the Erlang VM, known for running low-latency, 
+> distributed and fault-tolerant systems, while also being successfully 
+> used in web development and the embedded software domain.
 
 ##### Versions
 
@@ -261,6 +285,12 @@ Transfer/sec:      3.19MB
 
 ### Erlang
 
+> Erlang is a programming language used to build massively scalable 
+> soft real-time systems with requirements on high availability. Some 
+> of its uses are in telecoms, banking, e-commerce, computer telephony 
+> and instant messaging. Erlang's runtime system has built-in support 
+> for concurrency, distribution and fault tolerance.
+
 ##### Versions
 
 - Erlang 17.3
@@ -292,6 +322,9 @@ Transfer/sec:      3.18MB
 
 ### Go
 
+> Go is an open source programming language that makes it easy 
+> to build simple, reliable, and efficient software.
+
 ##### Versions
 
 - Go 1.3.1
@@ -321,6 +354,14 @@ Transfer/sec:      3.53MB
 #### Perception of Go
 
 ### Haskell
+
+> Haskell is an advanced purely-functional programming language. An 
+> open-source product of more than twenty years of cutting-edge 
+> research, it allows rapid development of robust, concise, correct 
+> software. With strong support for integration with other languages, 
+> built-in concurrency and parallelism, debuggers, profilers, rich 
+> libraries and an active community, Haskell makes it easier to 
+> produce flexible, maintainable, high-quality software.
 
 ##### Versions
 
@@ -354,6 +395,9 @@ Transfer/sec:      4.52MB
 
 ### PHP
 
+> PHP is a popular general-purpose scripting language that 
+> is especially suited to web development.
+
 ##### Versions
 
 - PHP 5.6.1
@@ -385,6 +429,12 @@ Transfer/sec:     83.67KB
 
 ### Racket
 
+> Racket is a full-spectrum programming language. It goes beyond 
+> Lisp and Scheme with dialects that support objects, types, 
+> laziness, and more. Racket enables programmers to link 
+> components written in different dialects, and it empowers 
+> programmers to create new, project-specific dialects.
+
 ##### Versions
 
 - Racket 6.1
@@ -415,6 +465,10 @@ Transfer/sec:    379.85KB
 
 ### Ruby
 
+> Ruby is a dynamic, open source programming language with 
+> a focus on simplicity and productivity. It has an elegant 
+> syntax that is natural to read and easy to write.
+
 ##### Versions
 
 - Ruby 2.0.0p481 (2014-05-08 revision 45883) [universal.x86_64-darwin13]
@@ -444,6 +498,11 @@ Transfer/sec:    101.65KB
 #### Perception of Ruby
 
 ### Rust
+
+> Rust is a systems programming language that runs blazingly 
+> fast, prevents almost all crashes (In theory. Rust is a 
+> work-in-progress and may do anything it likes up to and 
+> including eating your laundry.), and eliminates data races. 
 
 ##### Versions
 
