@@ -136,7 +136,7 @@ Currently, there is only one endpoint being tested in each language, a simple
 
 #### Clojure in Development
 
-[Jetty project code](https://github.com/slogsdon/language-web-shootout/tree/master/clojure/jetty). [http-lit project code](https://github.com/slogsdon/language-web-shootout/tree/master/clojure/http-kit).
+[Jetty project code](https://github.com/slogsdon/language-web-shootout/tree/master/clojure/jetty). [http-kit project code](https://github.com/slogsdon/language-web-shootout/tree/master/clojure/http-kit).
 
 #### Clojure Environment
 
