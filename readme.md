@@ -407,6 +407,45 @@ Transfer/sec:      4.52MB
 
 #### Perception of Haskell
 
+### Node
+
+> Node.js® is a platform built on Chrome's JavaScript runtime for easily 
+> building fast, scalable network applications. Node.js uses an 
+> event-driven, non-blocking I/O model that makes it lightweight and 
+> efficient, perfect for data-intensive real-time applications that run 
+> across distributed devices.
+
+##### Versions
+
+- Node.js v0.10.32
+- Express (4.9.7)
+
+#### Node in Development
+
+[Project code](https://github.com/slogsdon/language-web-shootout/tree/master/node)
+
+#### Node Environment
+
+#### Node when Building
+
+#### Node when Executing
+
+##### `wrk` results
+
+```
+$ wrk -c32 -t32 -d60 http://localhost:3000/
+Running 1m test @ http://localhost:3000/
+  32 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.06ms  690.63us  16.06ms   89.91%
+    Req/Sec   206.22     35.85   307.00     70.84%
+  382196 requests in 1.00m, 72.17MB read
+Requests/sec:   6370.12
+Transfer/sec:      1.20MB
+```
+
+#### Perception of Node
+
 ### PHP
 
 > PHP is a popular general-purpose scripting language that 
