@@ -209,6 +209,20 @@ Requests/sec:   1843.45
 Transfer/sec:    379.85KB
 ```
 
+### Ruby
+
+```
+$ wrk -c32 -t32 -d60 http://localhost:3000/
+Running 1m test @ http://localhost:3000/
+  32 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    51.13ms   16.88ms 153.43ms   70.38%
+    Req/Sec    19.81      5.10    40.00     69.07%
+  38798 requests in 1.00m, 5.96MB read
+Requests/sec:    646.51
+Transfer/sec:    101.65KB
+```
+
 ### PHP
 
 ```
@@ -222,18 +236,4 @@ Running 1m test @ http://localhost:3000/
   Socket errors: connect 0, read 32343, write 0, timeout 850
 Requests/sec:    538.88
 Transfer/sec:     83.67KB
-```
-
-### Ruby
-
-```
-$ wrk -c32 -t32 -d60 http://localhost:3000/
-Running 1m test @ http://localhost:3000/
-  32 threads and 32 connections
-  Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    51.13ms   16.88ms 153.43ms   70.38%
-    Req/Sec    19.81      5.10    40.00     69.07%
-  38798 requests in 1.00m, 5.96MB read
-Requests/sec:    646.51
-Transfer/sec:    101.65KB
 ```
