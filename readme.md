@@ -60,6 +60,18 @@ Currently, there is only one endpoint being tested in each language, a simple
         - [when Building](#haskell-when-building)
         - [when Executing](#haskell-when-executing)
         - [Perception of](#perception-of-haskell)
+    - [Lua](#lua)
+        - [in Development](#lua-in-development)
+        - [Environment](#lua-environment)
+        - [when Building](#lua-when-building)
+        - [when Executing](#lua-when-executing)
+        - [Perception of](#perception-of-lua)
+    - [Node](#node)
+        - [in Development](#node-in-development)
+        - [Environment](#node-environment)
+        - [when Building](#node-when-building)
+        - [when Executing](#node-when-executing)
+        - [Perception of](#perception-of-node)
     - [PHP](#php)
         - [in Development](#PHP-in-development)
         - [Environment](#PHP-environment)
@@ -94,6 +106,8 @@ Currently, there is only one endpoint being tested in each language, a simple
 - [Erlang](http://www.erlang.org/)
 - [Go](http://golang.org/)
 - [Haskell](http://www.haskell.org/)
+- [Lua](http://www.lua.org/)
+- [Node](http://nodejs.org/)
 - [PHP](http://php.net/)
 - [Racket](http://racket-lang.org/)
 - [Ruby](https://www.ruby-lang.org/)
@@ -406,6 +420,48 @@ Transfer/sec:      4.52MB
 ```
 
 #### Perception of Haskell
+
+### Lua
+
+> Lua is a powerful, fast, lightweight, embeddable scripting language.
+> 
+> Lua combines simple procedural syntax with powerful data description 
+> constructs based on associative arrays and extensible semantics. Lua is 
+> dynamically typed, runs by interpreting bytecode for a register-based 
+> virtual machine, and has automatic memory management with incremental 
+> garbage collection, making it ideal for configuration, scripting, and 
+> rapid prototyping.
+
+##### Versions
+
+- Lua 5.1
+- Luvit (0.10.0-36-g20e226a)
+
+#### Lua in Development
+
+[Project code](https://github.com/slogsdon/language-web-shootout/tree/master/lua)
+
+#### Lua Environment
+
+#### Lua when Building
+
+#### Lua when Executing
+
+##### `wrk` results
+
+```
+$ wrk -c32 -t32 -d60 http://localhost:3000/
+Running 1m test @ http://localhost:3000/
+  32 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.27ms    1.33ms  39.60ms   99.25%
+    Req/Sec   477.00     76.69   700.00     51.12%
+  869371 requests in 1.00m, 126.85MB read
+Requests/sec:  14490.59
+Transfer/sec:      2.11MB
+```
+
+#### Perception of Lua
 
 ### Node
 
