@@ -1,4 +1,0 @@
-App
-===
-
-** TODO: Add description **
